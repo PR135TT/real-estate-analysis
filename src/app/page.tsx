@@ -33,7 +33,7 @@ export default function HomePage() {
       <h1 className="text-3xl font-bold mb-6">Real Estate Listing Analyzer</h1>
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-xl bg-white p-6 rounded-lg shadow-md space-y-4"
+        className="w-full max-w-xl bg-black p-6 rounded-lg shadow-md space-y-4"
       >
         <div>
           <label className="block text-sm font-medium mb-1">Listing URL</label>
@@ -66,7 +66,7 @@ export default function HomePage() {
       </form>
 
       {result && (
-        <section className="w-full max-w-xl mt-8 bg-white p-6 rounded-lg shadow">
+        <section className="w-full max-w-xl mt-8 bg-black p-6 rounded-lg shadow">
           <h2 className="text-2xl font-semibold mb-4">Analysis Results</h2>
           <pre className="whitespace-pre-wrap">{result}</pre>
         </section>
