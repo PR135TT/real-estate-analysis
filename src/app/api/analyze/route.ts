@@ -1,11 +1,13 @@
 // app/api/analyze/route.ts
 import { NextResponse } from 'next/server';
-import { Configuration, OpenAIApi } from 'openai';
+import OpenAI from 'openai';
 
 const config = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
-const openai = new OpenAIApi(config);
+const openai = new OpenAIApi({
+	apiKey: process.env.OPENAI_API_KEY,
+});
 
 export async function POST(request: Request) {
   const form = await request.formData();
